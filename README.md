@@ -97,6 +97,15 @@ The app makes outbound network requests only for one purpose: checking the GitHu
 
 - Windows 10 or later.
 
+## Support
+
+If you find SilentBeep useful and want to support its development, you can:
+
+- ⭐ **Star the repository** on GitHub — it helps others discover the project
+- 💰 **Donate via PayPal** — [https://paypal.me/olegda](https://paypal.me/olegda)
+
+Your support helps keep the project alive and motivates further development!
+
 ## License & Support
 
 SilentBeep is licensed under the [MIT License](LICENSE).
