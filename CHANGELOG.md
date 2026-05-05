@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
-_No unreleased changes yet._
+## [1.0.4] - 2026-05-06
+### Changed
+- Added "Download and Install" button in settings to manually download and install updates
+- Added tray icon badge (orange dot) when an update is available
+- Added balloon notification when an update is available
+- Release notes now show all versions from current to latest (plain text format)
+- Renamed "Restart to Update" to "Download and Install" for clarity
 
 ## [1.0.3] - 2026-05-05
 ### Fixed
