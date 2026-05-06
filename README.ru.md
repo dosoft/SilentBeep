@@ -156,6 +156,7 @@ SilentBeep **не собирает** телеметрию, аналитику и
 
 - ⭐ **Поставьте звёздочку** на GitHub — это поможет другим найти проект
 - 💰 **Поддержите через PayPal** — [https://paypal.me/olegda](https://paypal.me/olegda)
+- 💰 **Поддержите через USDT (TRC20)** — `TH1EKSqqK8EqGtfjpVbGi9YWjqpqy2rC7h`
 
 Ваша поддержка помогает проекту развиваться!
 

@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.1.0] - 2026-05-07
+### Added
+- Added USDT (TRC20) donation option in README
+- Added badges for different states (update available, pause, night mode)
+- Added grayscale night mode icon (without badge)
+- Added night+pause icons (grayscale with pause badge)
+- Added night+pause+update icons (grayscale with both badges)
+- Added autostart setting persistence in configuration file
+
+### Fixed
+- Fixed GDI handle leak when changing tray icon — previous icon is now disposed before assigning new one
+- Fixed autostart setting being lost after reinstall or update — now saved to config and restored on startup
+- Fixed small logo in settings window — cropped logo.png to remove empty space
+
 ## [1.0.5] - 2026-05-06
 ### Fixed
 - Fixed startup jingle
@@ -41,6 +55,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
