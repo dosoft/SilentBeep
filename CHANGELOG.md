@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+_No unreleased changes yet._
+
+## [1.0.5] - 2026-05-06
+### Fixed
+- Fixed startup jingle
+
 ## [1.0.4] - 2026-05-06
 ### Changed
 - Added "Download and Install" button in settings to manually download and install updates
@@ -35,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
