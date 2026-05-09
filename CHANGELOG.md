@@ -6,16 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
-_No unreleased changes yet._
+## [1.1.1] - 2026-05-10
+### Fixed
+- Fixed asymmetric margins in settings window
+- Pinned scrollbar to right edge of settings window
 
 ## [1.1.0] - 2026-05-07
 ### Added
 - Added USDT (TRC20) donation option in README
-- Added badges for different states (update available, pause, night mode)
-- Added grayscale night mode icon (without badge)
-- Added night+pause icons (grayscale with pause badge)
-- Added night+pause+update icons (grayscale with both badges)
-- Added autostart setting persistence in configuration file
+- Added badges for different states (update available, pause)
+- Added grayscale night mode icon
 
 ### Fixed
 - Fixed GDI handle leak when changing tray icon — previous icon is now disposed before assigning new one
