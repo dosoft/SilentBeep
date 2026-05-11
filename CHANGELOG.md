@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+_No unreleased changes yet._
+
+## [1.1.2] - 2026-05-11
+### Fixed
+- Fixed update feature
+
 ## [1.1.1] - 2026-05-10
 ### Fixed
 - Fixed asymmetric margins in settings window
@@ -55,6 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 

@@ -22,7 +22,7 @@ SilentBeep is a Windows utility that prevents speakers from auto-sleeping by per
 
 ## Why?
 
-Many audio devices — wired or wireless — enter sleep mode or power off after a period of inactivity, causing delays when you need to play sound. This behaviour is often driven by energy efficiency regulations that require devices to enter low-power standby mode after a reasonable time of inactivity.
+Many audio devices — wired or wireless — enter sleep mode or power off after a period of inactivity, causing delays when you need to play sound. This behavior is often driven by energy efficiency regulations that require devices to enter low-power standby mode after a reasonable time of inactivity.
 
 SilentBeep keeps your audio device awake by playing ultra-low frequency pulses that are inaudible to humans.
 
@@ -33,7 +33,6 @@ SilentBeep keeps your audio device awake by playing ultra-low frequency pulses t
 - **Auto-start** — optionally launch with Windows.
 - **Customizable** — adjust interval, frequency, and duration, i18n, themes.
 - **Device Selection** — choose which audio device to use.
-- **Startup Jingle** — plays a pleasant 3-note sound on launch.
 - **Night Mode** — optionally pause beeps during specified nighttime hours.
 
 ## Download & Installation
@@ -48,13 +47,13 @@ On first launch, you'll hear a 3-note jingle indicating the app is working. The 
 
 ## Usage
 
-SilentBeep runs in the system tray (bottom-right corner of your screen):
+SilentBeep runs in the system tray:
 
 - **Left-click** — toggle keep-alive pulses on/off.
 - **Double-click** — open settings window.
 - **Right-click** — open context menu (settings, updates, exit).
 
-Configure pulse behaviour, audio device selection, autostart, night mode, and view runtime status in the Settings window.
+Configure pulse behavior, audio device selection, autostart, night mode, and view runtime status in the Settings window.
 
 ## Auto-Updates
 
@@ -104,6 +103,7 @@ If you find SilentBeep useful and want to support its development, you can:
 - ⭐ **Star the repository** on GitHub — it helps others discover the project
 - 💰 **Donate via PayPal** — [https://paypal.me/olegda](https://paypal.me/olegda)
 - 💰 **Donate via USDT (TRC20)** — `TH1EKSqqK8EqGtfjpVbGi9YWjqpqy2rC7h`
+- 💰 **Donate via TON** — `UQDIDJxzNDWlkv2ZQl6nxourhU7nwlBkErXDE3W7wJkJ_dGf`
 
 Your support helps keep the project alive and motivates further development!
 
