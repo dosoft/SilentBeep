@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.1.3] - 2026-05-11
+### Changed
+- Enabled Windows autostart by default for new installations.
+
 ## [1.1.2] - 2026-05-11
 ### Fixed
 - Fixed update feature
@@ -61,6 +65,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
