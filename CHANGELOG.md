@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.2.0] - 2026-05-11
+### Added
+- Added GitHub and donation links to Settings.
+
 ## [1.1.4] - 2026-05-11
 ### Fixed
 - Fixed GitHub Pages update feed publishing in the release workflow.
@@ -73,6 +77,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
