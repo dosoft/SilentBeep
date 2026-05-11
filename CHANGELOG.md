@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.1.4] - 2026-05-11
+### Fixed
+- Fixed GitHub Pages update feed publishing in the release workflow.
+- Fixed update notifications not refreshing the tray icon immediately.
+- Fixed release notes scrolling inside Settings.
+- Open Settings when clicking an update-available tray notification.
+- Made available updates visible at the top of Settings.
+
 ## [1.1.3] - 2026-05-11
 ### Changed
 - Enabled Windows autostart by default for new installations.
@@ -65,6 +73,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
