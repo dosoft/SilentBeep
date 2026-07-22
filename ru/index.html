@@ -73,6 +73,7 @@
     h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; }
     .tagline { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
     .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .release-meta { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
     .btn {
       display: inline-block;
       padding: 0.9rem 1.6rem;
@@ -91,6 +92,8 @@
     .feature { background: var(--bg); padding: 1.25rem; border-radius: var(--radius); }
     .feature h3 { color: var(--accent); margin-top: 0; }
     .lang { text-align: right; font-size: .9rem; }
+    .lang a, .lang-active, .lang-sep { margin: 0 0.25rem; }
+    .lang-active { color: var(--muted); font-weight: 600; }
     footer { text-align: center; color: var(--muted); font-size: .9rem; }
     footer p { margin: .25rem 0; }
     code { background: rgba(255,255,255,.08); padding: .15rem .4rem; border-radius: .35rem; }
@@ -99,6 +102,8 @@
 <body>
   <div class="container lang">
     <a href="../">English</a>
+    <span class="lang-sep">·</span>
+    <span class="lang-active">Русский</span>
   </div>
 
   <header>
@@ -110,6 +115,7 @@
         <a class="btn" href="https://github.com/dosoft/SilentBeep/releases">Скачать для Windows</a>
         <a class="btn btn-secondary" href="https://github.com/dosoft/SilentBeep">GitHub</a>
       </div>
+      <p id="release-meta" class="release-meta"></p>
     </div>
   </header>
 
@@ -182,5 +188,33 @@
       <p><a href="https://github.com/dosoft/SilentBeep/issues">Сообщить о проблеме</a> · <a href="https://github.com/dosoft/SilentBeep/releases">Скачать</a></p>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    function plural(n, one, few, many) {
+      var m10 = n % 10, m100 = n % 100;
+      if (m10 === 1 && m100 !== 11) return one;
+      if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+      return many;
+    }
+    const el = document.getElementById('release-meta');
+    if (!el) return;
+    fetch('https://api.github.com/repos/dosoft/SilentBeep/releases')
+      .then(r => r.ok ? r.json() : null)
+      .then(releases => {
+        if (!Array.isArray(releases) || !releases.length) return;
+        const latest = releases[0];
+        const version = latest.tag_name;
+        const date = new Date(latest.published_at).toLocaleDateString('ru-RU', { year: 'numeric', month: 'long', day: 'numeric' });
+        const total = releases.reduce((sum, rel) => {
+          const asset = rel.assets.find(a => a.name === 'SilentBeep-win-Setup.exe');
+          return sum + (asset ? asset.download_count : 0);
+        }, 0);
+        const word = plural(total, 'загрузка', 'загрузки', 'загрузок');
+        el.textContent = 'Последняя версия ' + version + ' \u00b7 выпущена ' + date + ' \u00b7 ' + total + ' ' + word;
+      })
+      .catch(() => {});
+  })();
+  </script>
 </body>
 </html>
