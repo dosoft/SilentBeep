@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SilentBeep — Keep your speakers awake</title>
+  <meta name="description" content="SilentBeep is a free Windows utility that prevents speakers and headphones from auto-sleeping by playing inaudible audio pulses.">
+  <meta name="keywords" content="SilentBeep, keep speakers awake, prevent speaker sleep, Windows utility, inaudible audio pulse, headphone sleep, audio device standby">
+  <meta name="author" content="SilentBeep contributors">
+  <link rel="canonical" href="https://dosoft.github.io/SilentBeep/">
+  <link rel="alternate" hreflang="ru" href="https://dosoft.github.io/SilentBeep/ru/">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/dosoft/SilentBeep/HEAD/logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SilentBeep — Keep your speakers awake">
+  <meta property="og:description" content="Free Windows utility that prevents speakers and headphones from auto-sleeping with inaudible audio pulses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dosoft.github.io/SilentBeep/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/dosoft/SilentBeep/HEAD/logo.png">
+  <meta property="og:image:width" content="128">
+  <meta property="og:image:height" content="128">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SilentBeep — Keep your speakers awake">
+  <meta name="twitter:description" content="Free Windows utility that prevents speakers and headphones from auto-sleeping with inaudible audio pulses.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/dosoft/SilentBeep/HEAD/logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SilentBeep",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "SilentBeep is a free Windows utility that prevents speakers and headphones from auto-sleeping by playing inaudible audio pulses.",
+    "url": "https://dosoft.github.io/SilentBeep/",
+    "image": "https://raw.githubusercontent.com/dosoft/SilentBeep/HEAD/logo.png",
+    "downloadUrl": "https://github.com/dosoft/SilentBeep/releases"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22d3ee;
+      --accent-dark: #0891b2;
+      --radius: 0.75rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header, section, footer { padding: 3rem 1rem; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; padding-top: 4rem; }
+    header img { width: 128px; height: 128px; border-radius: var(--radius); }
+    h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; }
+    .tagline { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
+    .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.6rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      background: var(--accent);
+      color: #000;
+      transition: transform .1s;
+    }
+    .btn:hover { transform: translateY(-2px); text-decoration: none; }
+    .btn-secondary { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+    .btn-secondary:hover { background: var(--accent); color: #000; }
+    section:nth-child(even) { background: var(--card); }
+    h2 { font-size: 1.75rem; margin-top: 0; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .feature { background: var(--bg); padding: 1.25rem; border-radius: var(--radius); }
+    .feature h3 { color: var(--accent); margin-top: 0; }
+    .lang { text-align: right; font-size: .9rem; }
+    footer { text-align: center; color: var(--muted); font-size: .9rem; }
+    footer p { margin: .25rem 0; }
+    .donate { margin-top: 1rem; }
+    code { background: rgba(255,255,255,.08); padding: .15rem .4rem; border-radius: .35rem; }
+  </style>
+</head>
+<body>
+  <div class="container lang">
+    <a href="ru/">Русский</a>
+  </div>
+
+  <header>
+    <div class="container">
+      <img src="https://raw.githubusercontent.com/dosoft/SilentBeep/HEAD/logo.png" alt="SilentBeep logo" width="128" height="128">
+      <h1>SilentBeep</h1>
+      <p class="tagline">Keep your speakers and headphones awake with inaudible audio pulses.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/dosoft/SilentBeep/releases">Download for Windows</a>
+        <a class="btn btn-secondary" href="https://github.com/dosoft/SilentBeep">View on GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Why SilentBeep?</h2>
+      <p>Many audio devices go into standby after a short period of silence. When you finally play a sound, you get an annoying delay while the device wakes up. SilentBeep prevents that by emitting ultra-low frequency pulses humans can't hear.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Truly silent</h3>
+          <p>Uses frequencies below human hearing range (10 Hz by default).</p>
+        </div>
+        <div class="feature">
+          <h3>System tray</h3>
+          <p>Runs in the background with a tiny tray icon and easy controls.</p>
+        </div>
+        <div class="feature">
+          <h3>Customizable</h3>
+          <p>Adjust interval, frequency, duration, audio device and night mode.</p>
+        </div>
+        <div class="feature">
+          <h3>Auto-start</h3>
+          <p>Optionally launches with Windows and auto-updates from GitHub Releases.</p>
+        </div>
+        <div class="feature">
+          <h3>Private</h3>
+          <p>No telemetry, analytics, or usage data is collected.</p>
+        </div>
+        <div class="feature">
+          <h3>Open source</h3>
+          <p>Released under the MIT license.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>How to install</h2>
+      <ol>
+        <li>Download <code>SilentBeep-win-Setup.exe</code> from the <a href="https://github.com/dosoft/SilentBeep/releases">Releases</a> page.</li>
+        <li>Run the installer. It installs per-user into <code>%LocalAppData%\SilentBeep\</code> without UAC.</li>
+        <li>SilentBeep starts automatically and keeps your audio device ready.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Support the project</h2>
+      <p>If SilentBeep is useful, you can support its development:</p>
+      <ul>
+        <li>⭐ Star the repository on <a href="https://github.com/dosoft/SilentBeep">GitHub</a></li>
+        <li>💰 Donate via <a href="https://paypal.me/olegda">PayPal</a></li>
+        <li>💰 USDT (TRC20): <code>TH1EKSqqK8EqGtfjpVbGi9YWjqpqy2rC7h</code></li>
+        <li>💰 TON: <code>UQDIDJxzNDWlkv2ZQl6nxourhU7nwlBkErXDE3W7wJkJ_dGf</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>SilentBeep is licensed under the <a href="https://github.com/dosoft/SilentBeep/blob/main/LICENSE">MIT License</a>.</p>
+      <p><a href="https://github.com/dosoft/SilentBeep/issues">Report an issue</a> · <a href="https://github.com/dosoft/SilentBeep/releases">Download</a></p>
+    </div>
+  </footer>
+</body>
+</html>
