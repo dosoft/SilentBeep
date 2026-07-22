@@ -74,7 +74,7 @@
     .tagline { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
     .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
     .release-meta { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
-    .release-meta .version { background: var(--accent); color: #000; padding: .15rem .45rem; border-radius: .35rem; font-weight: 700; }
+    .release-meta .version { color: var(--accent); font-weight: 700; }
     .btn {
       display: inline-block;
       padding: 0.9rem 1.6rem;
@@ -90,9 +90,12 @@
     section:nth-child(even) { background: var(--card); }
     h2 { font-size: 1.75rem; margin-top: 0; }
     .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
-    .feature { background: var(--bg); padding: 1.25rem; border-radius: var(--radius); }
-    .feature h3 { color: var(--accent); margin-top: 0; }
-    .lang { text-align: right; font-size: .9rem; }
+    .feature { background: var(--bg); padding: 1.25rem 1.25rem 3rem; border-radius: var(--radius); position: relative; overflow: hidden; }
+    .feature h3 { color: var(--accent); margin-top: 0; position: relative; z-index: 1; }
+    .feature p { position: relative; z-index: 1; }
+    .waveform { position: absolute; left: 0; right: 0; bottom: 0; height: 2.5rem; pointer-events: none; opacity: .25; z-index: 0; }
+    .waveform path { fill: none; stroke: var(--accent); stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; }
+    .lang { text-align: center; font-size: .9rem; }
     .lang a, .lang-active, .lang-sep { margin: 0 0.25rem; }
     .lang-active { color: var(--muted); font-weight: 600; }
     footer { text-align: center; color: var(--muted); font-size: .9rem; }
@@ -123,7 +126,7 @@
 
   <section>
     <div class="container">
-      <h2>Зачем SilentBeep?</h2>
+      <h2>Почему?</h2>
       <p>Многие аудиоустройства переходят в режим ожидания после короткой паузы. Когда вам наконец понадобится звук, устройство просыпается с заметной задержкой. SilentBeep предотвращает это, издавая сверхнизкочастотные импульсы, которые человек не слышит.</p>
     </div>
   </section>
@@ -217,6 +220,27 @@
         el.innerHTML = 'Последняя версия <span class="version">' + version + '</span> · выпущена ' + date + ' · ' + total + ' ' + word;
       })
       .catch(() => {});
+  })();
+  (function () {
+    function addWaveform(el) {
+      var ns = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('class', 'waveform');
+      svg.setAttribute('preserveAspectRatio', 'none');
+      svg.setAttribute('viewBox', '0 0 200 32');
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', '100%');
+      var d = '';
+      for (var i = 0; i < 200; i += 2) {
+        var amp = Math.random() * 14 + 1;
+        d += 'M' + i + ',16 L' + i + ',' + (16 - amp) + ' L' + i + ',' + (16 + amp) + ' ';
+      }
+      var path = document.createElementNS(ns, 'path');
+      path.setAttribute('d', d);
+      svg.appendChild(path);
+      el.appendChild(svg);
+    }
+    document.querySelectorAll('.feature').forEach(addWaveform);
   })();
   </script>
 </body>
