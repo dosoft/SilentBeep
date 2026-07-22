@@ -74,6 +74,7 @@
     .tagline { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
     .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
     .release-meta { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
+    .release-meta .version { background: var(--accent); color: #000; padding: .15rem .45rem; border-radius: .35rem; font-weight: 700; }
     .btn {
       display: inline-block;
       padding: 0.9rem 1.6rem;
@@ -213,7 +214,7 @@
           return sum + (asset ? asset.download_count : 0);
         }, 0);
         const word = plural(total, 'загрузка', 'загрузки', 'загрузок');
-        el.textContent = 'Последняя версия ' + version + ' \u00b7 выпущена ' + date + ' \u00b7 ' + total + ' ' + word;
+        el.innerHTML = 'Последняя версия <span class="version">' + version + '</span> · выпущена ' + date + ' · ' + total + ' ' + word;
       })
       .catch(() => {});
   })();
