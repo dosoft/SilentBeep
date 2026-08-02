@@ -12,6 +12,7 @@
   <a href="https://github.com/dosoft/SilentBeep/releases"><img src="https://img.shields.io/github/v/release/dosoft/SilentBeep" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
   <a href="https://github.com/dosoft/SilentBeep/releases"><img src="https://img.shields.io/github/downloads/dosoft/SilentBeep/total" alt="Downloads"></a>
+  <a href="https://dosoft.github.io/SilentBeep/ru/"><img src="https://img.shields.io/badge/Сайт-перейти-blue" alt="Сайт"></a>
 </p>
 
 <p align="center">

@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.2.1] - 2026-08-02
+### Fixed
+- Fixed empty device name in the tray "device unavailable" notification.
+- Tray tooltip now reflects the device-unavailable state.
+
 ## [1.2.0] - 2026-05-11
 ### Added
 - Added GitHub and donation links to Settings.
@@ -77,6 +82,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
