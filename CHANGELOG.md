@@ -8,6 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.3.0] - 2026-08-02
+### Changed
+- Replaced hand-rolled PCM generation with NAudio.
+- Replaced custom `FileLoggerProvider` with `NReco.Logging.File`.
+
+### Added
+- Config is logged on start/reconfigure.
+- Active audio devices are logged on startup.
+
+### Fixed
+- `deviceId` from config is now logged on beep failure.
+
+### Removed
+- Noisy `TrayWindow`/`RefreshMenuTexts` info logs.
+
 ## [1.2.1] - 2026-08-02
 ### Fixed
 - Fixed empty device name in the tray "device unavailable" notification.
@@ -82,6 +97,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
