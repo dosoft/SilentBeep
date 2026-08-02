@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.3.1] - 2026-08-02
+### Changed
+- The "device unavailable" tray balloon is now shown once per unavailable streak instead of repeating on every scheduled beep.
+
 ## [1.3.0] - 2026-08-02
 ### Changed
 - Replaced hand-rolled PCM generation with NAudio.
@@ -97,6 +101,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
