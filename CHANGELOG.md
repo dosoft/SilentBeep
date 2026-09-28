@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.3.2] - 2026-09-29
+### Changed
+- Migrated from WPF/WPF-UI to Avalonia with Native AOT; measurements versus WPF 1.3.1 show a 59% smaller installer, 63% faster Settings startup, and 31% lower Working Set usage.
+- Show a tray notification when a manual update check finds no updates.
+- Reworked settings rows into compact cards, enabled the Windows system accent color.
+
+### Fixed
+- Prevented duplicate launches from crashing while the first instance owns the app and log file.
+- Prevented an exception when selecting an output device while an unavailable device is listed.
+
 ## [1.3.1] - 2026-08-02
 ### Changed
 - The "device unavailable" tray balloon is now shown once per unavailable streak instead of repeating on every scheduled beep.
@@ -101,6 +111,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
