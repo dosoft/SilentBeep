@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
   <a href="https://github.com/dosoft/SilentBeep/releases"><img src="https://img.shields.io/github/downloads/dosoft/SilentBeep/total" alt="Downloads"></a>
   <a href="https://dosoft.github.io/SilentBeep/"><img src="https://img.shields.io/badge/Website-visit-blue" alt="Website"></a>
+  <a href="https://slint.dev"><img src="https://img.shields.io/badge/Made%20with-Slint-2379f4" alt="Made with Slint"></a>
 </p>
 
 <p align="center">
@@ -92,6 +93,16 @@ Log files are written to `%LocalAppData%\SilentBeep\logs\` and rotated daily (up
 SilentBeep does **not** collect any telemetry, analytics, or usage data.
 
 The app makes outbound network requests only for one purpose: checking the GitHub Releases API (`api.github.com`) every 6 hours for new versions. Only anonymous HTTP(S) traffic is used — no user-identifiable information is sent.
+
+## Building from source
+
+Requires a Rust toolchain ([rustup](https://rustup.rs/)) on Windows:
+
+```powershell
+cargo build --release
+```
+
+The binary is `target\release\SilentBeep.exe`. Run tests with `cargo test`.
 
 ## System Requirements
 

@@ -13,6 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
   <a href="https://github.com/dosoft/SilentBeep/releases"><img src="https://img.shields.io/github/downloads/dosoft/SilentBeep/total" alt="Downloads"></a>
   <a href="https://dosoft.github.io/SilentBeep/ru/"><img src="https://img.shields.io/badge/Сайт-перейти-blue" alt="Сайт"></a>
+  <a href="https://slint.dev"><img src="https://img.shields.io/badge/Made%20with-Slint-2379f4" alt="Made with Slint"></a>
 </p>
 
 <p align="center">
@@ -98,6 +99,16 @@ SilentBeep **не собирает** телеметрию, аналитику и
 Единственные исходящие запросы — обращение к GitHub Releases API (`api.github.com`) раз в 6 часов для проверки новых версий. Передаётся только анонимный HTTP(S)-трафик без идентифицирующей информации.
 
 Автопроверку можно полностью выключить в **Настройках → Обновления**. Даже при включённой проверке обновления скачиваются, но **никогда не применяются без вашего явного перезапуска**.
+
+## Сборка из исходников
+
+Нужен тулчейн Rust ([rustup](https://rustup.rs/)) на Windows:
+
+```powershell
+cargo build --release
+```
+
+Бинарник — `target\release\SilentBeep.exe`. Тесты: `cargo test`.
 
 ## Системные требования
 

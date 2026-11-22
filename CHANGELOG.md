@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.4.0] - 2026-11-23
+### Changed
+- Rewrote the application in Rust (Slint UI, Win32/WASAPI, Velopack) replacing the C#/Avalonia implementation; same features, config, and update compatibility — measurements versus the C# build show a ~66% smaller executable (11.2 MB vs 32.6 MB), ~74% lower Working Set and ~95% lower private memory at idle, and ~62% faster Settings startup (404 ms vs 1054 ms).
+
 ## [1.3.2] - 2026-09-29
 ### Changed
 - Migrated from WPF/WPF-UI to Avalonia with Native AOT; measurements versus WPF 1.3.1 show a 59% smaller installer, 63% faster Settings startup, and 31% lower Working Set usage.
@@ -111,6 +115,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
