@@ -94,16 +94,6 @@ SilentBeep does **not** collect any telemetry, analytics, or usage data.
 
 The app makes outbound network requests only for one purpose: checking the GitHub Releases API (`api.github.com`) every 6 hours for new versions. Only anonymous HTTP(S) traffic is used — no user-identifiable information is sent.
 
-## Building from source
-
-Requires a Rust toolchain ([rustup](https://rustup.rs/)) on Windows:
-
-```powershell
-cargo build --release
-```
-
-The binary is `target\release\SilentBeep.exe`. Run tests with `cargo test`.
-
 ## System Requirements
 
 - Windows 10 or later.
