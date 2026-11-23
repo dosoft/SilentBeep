@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 _No unreleased changes yet._
 
+## [1.4.1] - 2026-11-23
+### Fixed
+- Minor visual rough edges in the Settings window and update notifications.
+
 ## [1.4.0] - 2026-11-23
 ### Changed
 - Rewrote the application in Rust (Slint UI, Win32/WASAPI, Velopack) replacing the C#/Avalonia implementation; same features, config, and update compatibility — measurements versus the C# build show a ~66% smaller executable (11.2 MB vs 32.6 MB), ~74% lower Working Set and ~95% lower private memory at idle, and ~62% faster Settings startup (404 ms vs 1054 ms).
@@ -115,6 +119,7 @@ _No unreleased changes yet._
 - Graceful handling of system sleep/resume (scheduler re-aligns after wake)
 - Localized UI in English and Russian with auto-detection and manual switcher
 - Theme switcher (System / Light / Dark) with automatic detection of Windows theme
+
 
 
 
